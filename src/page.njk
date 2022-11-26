@@ -12,26 +12,9 @@ x-init="refferedBy=((new URL(document.location)).searchParams).get('ref');consol
         
     {% include 'hero.njk' %}
 
-    <div class="card w-96 bg-black shadow-xl">
-      <figure class="px-10 pt-10">
-        <img src="/assets/aware.png" class="mx-auto w-48" />
-      </figure>
-      <div class="card-body items-center text-center">
-        <h2 class="card-title">The future of Computing</h2>
-        <p>Check out our full line of products</p>
-        <div class="card-actions">
-          <button class="btn btn-primary">Shop Now</button>
-        </div>
-      </div>
-    </div>
+    {% include 'aware.njk' %}
 
-    <div class="bg-black pt-20">
-    <div class="max-w-md flex flex-col content-center">
-      
-      {# <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p> #}
-      <button class="btn btn-outline">View full Product Suite</button>
-    </div>
-    </div>
+    
     
   </div>
 
