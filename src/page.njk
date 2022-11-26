@@ -1,10 +1,24 @@
-{# This page is built with nunjucks! #}
-
-{% set title = 'Home' %}
+{% set title = 'Aware by ViiM' %}
 {% extends "layout.njk" %}
 
 {% block body %}
-  <main class="container py-8">
-    <h1 class="text-[62px]">This is the {{ title | lower }} page.</h1>
-  </main>
+<main class="">
+<div class="flex flex-row" x-data="{refferedBy:'viim'}" 
+x-init="refferedBy=((new URL(document.location)).searchParams).get('ref');console.log(refferedBy)">
+    
+    <div class="w-full h-full flex flex-col content-center">
+    
+    <div class="relative h-full">
+        
+    <section class="py-2 flex flex-row">
+        <div class="w-full">
+        {% include "views/revealjotform.njk" %}
+        </div>
+    </section>
+    </div>
+    
+  </div>
+
+</div>
+</main>
 {% endblock %}
