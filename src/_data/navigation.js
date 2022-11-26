@@ -1,4 +1,5 @@
 module.exports = [
   { name: 'Home', route: '/' },
-  { name: 'About', route: '/about/' },
+  { name: 'Shop', route: '/shop/' },
+  { name: 'White Paper', route: '/assets/awarebyviim.pdf' },
 ]
