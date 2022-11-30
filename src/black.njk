@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+		<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+		<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+		<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+		<!--[if gt IE 8]><!--> <html class="no-js" style="background:#000000"> <!--<![endif]-->
+
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<!-- Primary Meta Tags -->
+			<title>AWARE | by V i i M</title>
+			<meta name="title" content="AWARE | by V i i M">
+			<meta name="description" content="AWARE by ViiM is a suite of advanced computing products, designed to enhance and augment your personal and professional life.">
+
+			<!-- Open Graph / Facebook -->
+			<meta property="og:type" content="website">
+			<meta property="og:url" content="https://viim.tech/">
+			<meta property="og:title" content="AWARE | by V i i M">
+			<meta property="og:description" content="AWARE by ViiM is a suite of advanced computing products, designed to enhance and augment your personal and professional life.">
+			<meta property="og:image" content="https://viim.tech/assets/airglass.gif">
+
+			<!-- Twitter -->
+			<meta property="twitter:card" content="summary_large_image">
+			<meta property="twitter:url" content="https://viim.tech/">
+			<meta property="twitter:title" content="AWARE | by V i i M">
+			<meta property="twitter:description" content="AWARE by ViiM is a suite of advanced computing products, designed to enhance and augment your personal and professional life.">
+			<meta property="twitter:image" content="https://viim.tech/assets/airglass.gif">
+
+			<!-- LOAD JQUERY LIBRARY -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+			
+			<!-- LOADING FONTS AND ICONS -->
+			<link href="https://fonts.googleapis.com/css?family=Roboto:400%7CPoppins:900%2C900italic%2C600%2Citalic%2C800%2C800italic%7CQuicksand:400&display=swap" rel="stylesheet" property="stylesheet" media="all" type="text/css" >
+
+			
+			<link rel="stylesheet" type="text/css" href="/assets/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+			<link rel="stylesheet" type="text/css" href="/assets/fonts/font-awesome/css/font-awesome.css">
+			
+			<!-- REVOLUTION STYLE SHEETS -->
+			<link rel="stylesheet" type="text/css" href="/assets/css/rs6.css">
+			<link href="https://cdn.jsdelivr.net/npm/daisyui@2.42.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+			<!-- REVOLUTION LAYERS STYLES -->
+						<!-- REVOLUTION JS FILES -->
+			
+		<script>
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = true;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+					<script src="/assets/js/rbtools.min.js"></script>
+							<script src="/assets/js/rs6.min.js"></script>
+							
+			<script>function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
+
+			
+		</head>
+		
+		<body>
+		
+		<div class="grid place-items-center h-screen">
+			<!-- START Ecommerce Sale Slider1 REVOLUTION SLIDER 6.6.2 --><p class="rs-p-wp-fix"></p>
+			<rs-module-wrap id="rev_slider_50_1_wrapper" data-alias="ecommerce-sale-slider1" data-source="gallery" style="visibility:hidden;background:#fe907e;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
+				<rs-module id="rev_slider_50_1" style="" data-version="6.6.2">
+					<rs-slides style="overflow: hidden; position: absolute;">
+						<rs-slide style="position: absolute;" data-key="rs-164" data-title="Slide" data-anim="ms:600ms;" data-in="o:0;" data-out="a:false;" data-sloop="s:610;e:7200;">
+							<img src="/assets/transparent.png" alt="Slide" class="rev-slidebg tp-rs-img" data-bg="c:#000000;" data-parallax="off" data-no-retina>
+<!--
+							--><rs-group
+								id="slider-50-slide-164-layer-7" 
+								class="rs-pxl-2"
+								data-type="group"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:480px,350px,280px,170px;yo:200px,150px,120px,80px;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:150px,123px,93px,57px;h:150px,123px,93px,57px;"
+								data-basealign="slide"
+								data-ford="frame_0;frame_1;frame_2;frame_999;"
+								data-clip="u:true;t:circle;o:clr;"
+								data-frame_0="x:100px,82px,62px,38px;o:1;cp:0%;"
+								data-frame_1="sX:1.1;sY:1.1;e:power1.inOut;sp:500;cp:50%;"
+								data-frame_999="x:-100px,-82px,-62px,-38px;o:0;e:power1.inOut;st:w;sp:500;sR:500;cp:0%;sA:8500;"
+								data-frame_2="x:-25px,-20px,-15px,-9px;sX:1.3;sY:1.3;oX:50%;oY:50%;oZ:0;tp:600;e:none;st:500;sp:8000;"
+								style="z-index:16;"
+							><!--
+								--><rs-layer
+									id="slider-50-slide-164-layer-9" 
+									data-type="text"
+									data-color="#a32d23"
+									data-rsp_ch="on"
+									data-xy="x:c;xo:-5px,-4px,-3px,-1px;yo:25px,20px,15px,9px;"
+									data-pos="a"
+									data-text="w:normal;s:30,24,18,11;l:30,24,18,11;ls:-2px,-1px,0px,0px;"
+									data-btrans="rZ:-15;"
+									data-frame_0="o:1;"
+									data-frame_999="o:1;st:w;sp:500;sR:8700;"
+									style="z-index:9;font-family:'Poppins';text-transform:uppercase;font-style:italic;"
+								>up to 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-50-slide-164-layer-10" 
+									data-type="text"
+									data-color="#a32d23"
+									data-rsp_ch="on"
+									data-xy="x:c;y:m;"
+									data-pos="a"
+									data-text="w:normal;s:60,49,37,22;l:60,49,37,22;ls:-3px,-2px,-1px,0px;fw:900;"
+									data-btrans="rZ:-15;"
+									data-frame_0="o:1;"
+									data-frame_999="o:1;st:w;sp:500;sR:8700;"
+									style="z-index:8;font-family:'Poppins';text-transform:uppercase;font-style:italic;"
+								>50% 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-50-slide-164-layer-11" 
+									data-type="text"
+									data-color="#a32d23"
+									data-rsp_ch="on"
+									data-xy="x:c;xo:10px,8px,6px,3px;yo:95px,78px,59px,36px;"
+									data-pos="a"
+									data-text="w:normal;s:30,24,18,11;l:30,24,18,11;ls:-2px,-1px,0px,0px;fw:800;"
+									data-btrans="rZ:-15;"
+									data-frame_0="o:1;"
+									data-frame_999="o:1;st:w;sp:500;sR:8700;"
+									style="z-index:7;font-family:'Poppins';text-transform:uppercase;font-style:italic;"
+								>off 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-50-slide-164-layer-8" 
+									data-type="shape"
+									data-rsp_ch="on"
+									data-xy="x:c;y:m;"
+									data-pos="a"
+									data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+									data-dim="w:150px,123px,93px,57px;h:150px,123px,93px,57px;"
+									data-border="bor:75px,75px,75px,75px;"
+									data-frame_999="o:1;st:w;sp:500;sR:8700;"
+									style="z-index:6;background-color:#d8e8e8;"
+								> 
+								</rs-layer><!--
+							--></rs-group><!--
+
+							--><rs-layer
+								id="slider-50-slide-164-layer-0" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:c;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:100%;h:100%;"
+								data-vbility="f,f,f,f"
+								data-basealign="slide"
+								data-border="bos:solid;boc:#d8e8e8;bow:70px,70px,70px,70px;"
+								data-ford="frame_0;frame_1;frame_2;frame_999;"
+								data-frame_0="sX:1.13;sY:1.22;o:1;"
+								data-frame_1="sX:1.05;sY:1.09;e:power1.inOut;sp:500;"
+								data-frame_999="sX:1.13;sY:1.22;o:1;e:power1.inOut;st:w;sp:500;sR:500;"
+								data-frame_2="sX:1;sY:1;oX:50%;oY:50%;oZ:0;tp:600;e:none;st:500;sp:8000;"
+								style="z-index:10;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-50-slide-164-layer-1" 
+								class="rs-pxl-1"
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:146px,120px,90px,75px;y:b;yo:-126px,-20px,-20px,0;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:720px,594px,451px,278px;h:1059px,874px,664px,409px;"
+								data-ford="frame_0;frame_1;frame_2;frame_999;"
+								data-frame_0="x:200px,165px,125px,77px;oY:100%;"
+								data-frame_1="oY:100%;e:power1.inOut;sp:500;"
+								data-frame_999="x:-100px,-82px,-62px,-38px;o:0;e:power1.inOut;st:w;sp:500;sR:500;"
+								data-frame_2="x:-50px,-41px,-31px,-19px;oX:50%;oY:100%;oZ:0;tp:600;e:none;st:500;sp:8000;"
+								style="z-index:13;"
+							><img src="/assets/Untitled-design-1.png" alt="" class="tp-rs-img" width="720" height="1059" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-50-slide-164-layer-2" 
+								data-type="text"
+								data-color="#a32d23"
+								data-rsp_ch="on"
+								data-xy="yo:-70px,-57px,-43px,-26px;"
+								data-text="s:120,99,75,46;l:120,99,75,46;ls:-7px,-5px,-3px,-1px;fw:900;"
+								data-basealign="slide"
+								data-btrans="rZ:-15;"
+								data-ford="frame_0;frame_1;frame_2;frame_999;"
+								data-frame_0="x:200px,165px,125px,77px;"
+								data-frame_1="e:power1.inOut;sp:500;"
+								data-frame_999="x:-200px,-165px,-125px,-77px;o:0;e:power1.inOut;st:w;sp:500;sR:500;"
+								data-frame_2="x:-100px,-82px,-62px,-38px;o:1;oX:50%;oY:50%;oZ:0;tp:600;e:none;st:500;sp:8000;"
+								style="z-index:11;font-family:'Poppins';text-transform:uppercase;font-style:italic;"
+							>Black Friday Sale Black Friday Sale 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-50-slide-164-layer-3" 
+								data-type="text"
+								data-color="#e0f8d8"
+								data-rsp_ch="on"
+								data-xy="xo:108px,100px,60px,50px;y:b;yo:327px,190px,140px,130px;"
+								data-text="w:normal;s:23,18,15,15;l:30,24,20,20;"
+								data-vbility="f,f,f,f"
+								data-basealign="slide"
+								data-frame_0="x:100px,82px,62px,38px;"
+								data-frame_1="e:power1.inOut;sp:500;"
+								data-frame_999="x:-25px,-20px,-15px,-9px;o:0;e:power1.inOut;st:w;sp:500;sR:8500;"
+								style="z-index:6;font-family:'Quicksand';"
+							>Introducing... 
+							</rs-layer><!--
+
+							--><a
+								id="slider-50-slide-164-layer-4" 
+								class="rs-layer rev-btn"
+								href="/home" rel="noopener"
+								data-type="button"
+								data-rsp_ch="on"
+								data-xy="xo:230px,192px,130px,50px;y:b;yo:73px,100px,60px,50px;"
+								data-text="w:normal;s:23,18,16,16;l:70,57,50,50;fw:600;"
+								data-dim="minh:0px,none,none,none;"
+								data-basealign="slide"
+								data-padding="r:70,58,50,50;l:70,58,50,50;"
+								data-frame_0="x:100px,82px,62px,38px;"
+								data-frame_1="e:power1.inOut;sp:500;"
+								data-frame_999="x:-25px,-20px,-15px,-9px;o:0;e:power1.inOut;st:w;sp:500;sR:8500;"
+								data-frame_hover="sX:1.1;sY:1.1;bgc:#a32d23;bor:20px,20px,20px,20px;sp:100;e:power1.inOut;bri:120%;"
+								style="z-index:15;background-color:#a32d23;font-family:'Poppins';"
+							>Get Aware 
+							</a><!--
+
+							--><rs-layer
+								id="slider-50-slide-164-layer-5" 
+								data-type="text"
+								data-color="rgba(163, 45, 35, 0)"
+								data-rsp_ch="on"
+								data-xy="xo:-200px,-165px,-125px,-77px;yo:105px,86px,65px,40px;"
+								data-text="s:120,99,75,46;l:120,99,75,46;ls:-7px,-5px,-3px,-1px;fw:900;"
+								data-tst="w:3px,2px,2px,1px;c:#a32d23;"
+								data-basealign="slide"
+								data-btrans="rZ:-15;"
+								data-ford="frame_0;frame_1;frame_2;frame_999;"
+								data-frame_0="x:-200px,-165px,-125px,-77px;"
+								data-frame_1="e:power1.inOut;sp:500;"
+								data-frame_999="x:200px,165px,125px,77px;o:0;e:power1.inOut;st:w;sp:500;sR:500;"
+								data-frame_2="x:100px,82px,62px,38px;o:1;oX:50%;oY:50%;oZ:0;tp:600;e:none;st:500;sp:8000;"
+								style="z-index:8;font-family:'Poppins';text-transform:uppercase;font-style:italic;"
+							>Sale Black Friday Sale Black Friday 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-50-slide-164-layer-6" 
+								data-type="text"
+								data-color="rgba(216, 232, 232, 0)"
+								data-rsp_ch="on"
+								data-xy="xo:-200px,-165px,-125px,-77px;yo:-137px,-113px,-85px,-52px;"
+								data-text="s:120,99,75,46;l:120,99,75,46;ls:-7px,-5px,-3px,-1px;fw:900;"
+								data-tst="w:3px,2px,2px,1px;c:#d8e8e8;"
+								data-basealign="slide"
+								data-btrans="rZ:-15;"
+								data-ford="frame_0;frame_1;frame_2;frame_999;"
+								data-frame_0="x:-200px,-165px,-125px,-77px;"
+								data-frame_1="e:power1.inOut;sp:500;"
+								data-frame_999="x:200px,165px,125px,77px;o:0;e:power1.inOut;st:w;sp:500;sR:500;"
+								data-frame_2="x:150px,123px,93px,57px;o:1;oX:50%;oY:50%;oZ:0;tp:600;e:none;st:500;sp:8000;"
+								style="z-index:7;font-family:'Poppins';text-transform:uppercase;font-style:italic;"
+							>Sale Black Friday Sale Black Friday 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-50-slide-164-layer-12" 
+								data-type="text"
+								data-color="#a32d23"
+								data-rsp_ch="on"
+								data-xy="x:r;xo:150px,100px,70px,50px;y:b;yo:30px,40px,10px,10px;"
+								data-text="w:normal;s:25,20,20,20;l:60,50,50,50;a:center;"
+								data-dim="w:60px,50px,50px,50px;"
+								data-vbility="f,f,f,f"
+								data-actions='o:click;a:jumptoslide;slide:next;'
+								data-basealign="slide"
+								data-frame_0="y:bottom;o:1;"
+								data-frame_1="e:power1.inOut;sp:500;"
+								data-frame_999="y:bottom;o:1;e:power1.inOut;st:w;"
+								data-frame_hover="sX:1.2;sY:1.2;c:#a32d23;bgc:#d8e8e8;sp:100ms;e:power1.inOut;"
+								style="z-index:18;background-color:#d8e8e8;font-family:'Roboto';cursor:pointer;"
+							><i class="material-icons">arrow_forward</i> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-50-slide-164-layer-13" 
+								data-type="text"
+								data-color="#a32d23"
+								data-rsp_ch="on"
+								data-xy="x:r;xo:209px,149px,119px,99px;y:b;yo:30px,40px,10px,10px;"
+								data-text="w:normal;s:25,20,20,20;l:60,50,50,50;a:center;"
+								data-dim="w:60px,50px,50px,50px;"
+								data-vbility="f,f,f,f"
+								data-actions='o:click;a:jumptoslide;slide:previous;'
+								data-basealign="slide"
+								data-frame_0="y:bottom;o:1;"
+								data-frame_1="e:power1.inOut;sp:500;"
+								data-frame_999="y:bottom;o:1;e:power1.inOut;st:w;"
+								data-frame_hover="sX:1.2;sY:1.2;c:#a32d23;bgc:#d8e8e8;sp:100ms;e:power1.inOut;"
+								style="z-index:17;background-color:#d8e8e8;font-family:'Roboto';cursor:pointer;"
+							><i class="material-icons">arrow_back</i> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-50-slide-164-layer-14" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:c;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:100%;h:100%;"
+								data-vbility="f,f,f,f"
+								data-basealign="slide"
+								data-border="bos:solid;boc:#d8e8e8;bow:30px,30px,30px,30px;"
+								data-ford="frame_0;frame_1;frame_2;frame_999;"
+								data-frame_0="sX:1.13;sY:1.22;o:1;"
+								data-frame_1="sX:1.05;sY:1.09;e:power1.inOut;sp:500;"
+								data-frame_999="sX:1.13;sY:1.22;o:1;e:power1.inOut;st:w;sp:500;sR:500;"
+								data-frame_2="sX:1;sY:1;oX:50%;oY:50%;oZ:0;tp:600;e:none;st:500;sp:8000;"
+								style="z-index:9;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-50-slide-164-layer-15" 
+								class="rs-pxl-3"
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:200px,165px,125px,97px;y:b;yo:-80px,-66px,-50px,-30px;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:653px,539px,409px,252px;h:816px,673px,511px,315px;"
+								data-ford="frame_0;frame_1;frame_2;frame_999;"
+								data-frame_0="x:200px,165px,125px,77px;oY:100%;blu:10px;"
+								data-frame_1="o:0.25;oY:100%;e:power1.inOut;sp:500;blu:10px;"
+								data-frame_999="x:-100px,-82px,-62px,-38px;o:0;e:power1.inOut;st:w;sp:500;sR:500;"
+								data-frame_2="x:-50px,-41px,-31px,-19px;oX:50%;oY:100%;oZ:0;tp:600;e:none;st:500;sp:8000;"
+								style="z-index:12;"
+							><img src="/assets/element1_shadow2.png" alt="" class="tp-rs-img" width="653" height="816" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-50-slide-164-layer-19" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="xo:230px,189px,143px,88px;y:b;yo:145px,158px,103px,120px;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:257px,212px,161px,99px;h:254px,209px,158px,97px;"
+								data-basealign="slide"
+								data-frame_999="o:0;st:w;"
+								style="z-index:14;"
+							><img src="/assets/by-ViiM-e1669406909436.png" alt="" class="tp-rs-img" width="974" height="964" data-no-retina> 
+							</rs-layer><!--
+-->						</rs-slide>
+					</rs-slides>
+				</rs-module>
+				<script>
+					
+				</script>
+<script>
+		if(typeof revslider_showDoubleJqueryError === "undefined") {function revslider_showDoubleJqueryError(sliderID) {console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion.");console.log("To fix this, you can:");console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on");console.log("2. Find the double jQuery.js inclusion and remove it");return "Double Included jQuery Library";}}
+</script>
+			</rs-module-wrap>
+			<!-- END REVOLUTION SLIDER -->
+
+				<script>
+					var	tpj = jQuery;
+					if(window.RS_MODULES === undefined) window.RS_MODULES = {};
+					if(RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+					RS_MODULES.modules["revslider501"] = {once: RS_MODULES.modules["revslider501"]!==undefined ? RS_MODULES.modules["revslider501"].once : undefined, init:function() {
+						window.revapi50 = window.revapi50===undefined || window.revapi50===null || window.revapi50.length===0  ? document.getElementById("rev_slider_50_1") : window.revapi50;
+						if(window.revapi50 === null || window.revapi50 === undefined || window.revapi50.length==0) { window.revapi50initTry = window.revapi50initTry ===undefined ? 0 : window.revapi50initTry+1; if (window.revapi50initTry<20) requestAnimationFrame(function() {RS_MODULES.modules["revslider501"].init()}); return;}
+						window.revapi50 = jQuery(window.revapi50);
+						if(window.revapi50.revolution==undefined){ revslider_showDoubleJqueryError("rev_slider_50_1"); return;}
+						revapi50.revolutionInit({
+								revapi:"revapi50",
+								DPR:"dpr",
+								sliderLayout:"fullwidth",
+								duration:"8500ms",
+								visibilityLevels:"1240,1024,778,480",
+								gridwidth:"1240,1024,778,480",
+								gridheight:"800,700,500,400",
+								spinner:"spinner7",
+								perspective:600,
+								perspectiveType:"global",
+								editorheight:"800,700,500,400",
+								responsiveLevels:"1240,1024,778,480",
+								progressBar:{disableProgressBar:true},
+								navigation: {
+									wheelCallDelay:1000,
+									onHoverStop:false,
+									touch: {
+										touchenabled:true
+									}
+								},
+								parallax: {
+									levels:[2,3,1,20,25,30,35,40,45,46,47,48,49,50,51,30],
+									type:"mouse",
+									origo:"slidercenter",
+									speed:"2000ms"
+								},
+								viewPort: {
+									global:false,
+									globalDist:"-200px",
+									enable:true,
+									visible_area:"0px"
+								},
+								fallbacks: {
+									allowHTML5AutoPlayOnAndroid:true
+								},
+						});
+						
+					}} // End of RevInitScript
+					if (window.RS_MODULES.checkMinimal!==undefined) { window.RS_MODULES.checkMinimal();};
+				</script>
+
+
+
+<style>@font-face{font-family:'Material Icons'; font-style:normal; font-weight:400; src:url(//fonts.gstatic.com/s/materialicons/v41/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2')}rs-module .material-icons{font-family:'Material Icons'; font-weight:normal; font-style:normal;font-size:inherit; display:inline-block; text-transform:none; letter-spacing:normal; word-wrap:normal; white-space:nowrap; direction:ltr; vertical-align:top; line-height:inherit; font-feature-settings:'liga'; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; -moz-osx-font-smoothing:grayscale}</style>
+<script type="text/javascript">window.RVS = window.RVS || {}; window.RVS.ENV = window.RVS.ENV || {}; window.RVS.ENV.TRANSITIONPACK_URL = "https://zazamap.com/wp-content/plugins/revslider-transitionpack-addon/";</script>
+		</div>
+		{% include 'footer.njk' %}
+		</body>
+				</html>
+		
