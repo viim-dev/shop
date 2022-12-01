@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="black">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<!-- Primary Meta Tags -->
+<title>V i i M | Virtual Interactive Innovation in Motion</title>
+<meta name="title" content="V i i M | Virtual Interactive Innovation in Motion">
+<meta name="description" content="Virtual Interactive Innovation in Motion (ViiM) is a suite of advanced computing products, designed to enhance and augment your personal and professional life.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://viim.tech/">
+<meta property="og:title" content="V i i M | Virtual Interactive Innovation in Motion">
+<meta property="og:description" content="Virtual Interactive Innovation in Motion (ViiM) is a suite of advanced computing products, designed to enhance and augment your personal and professional life.">
+<meta property="og:image" content="https://viim.tech/assets/airglass.gif">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://viim.tech/">
+<meta property="twitter:title" content="V i i M | Virtual Interactive Innovation in Motion">
+<meta property="twitter:description" content="Virtual Interactive Innovation in Motion (ViiM) is a suite of advanced computing products, designed to enhance and augment your personal and professional life.">
+<meta property="twitter:image" content="https://viim.tech/assets/airglass.gif">
+  <link rel="stylesheet" href="/assets/main.bundle.css">
+  <script src="/assets/main.bundle.js" defer></script>
+  <title>{{ title }}</title>
+  {% block head %}{% endblock %}
+</head>
+<body hx-boost="true" class="">
+  {% include 'header.njk' %}
+  {% block body %}
+    <div>
+      {{ content | safe }}
+    </div>
+  {% endblock %}
+</body>
+</html>
