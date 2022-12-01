@@ -28,73 +28,35 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       crossorigin="anonymous"
     />
+    <script src="/assets/main.bundle.js" defer></script>
   </head>
   <body>
+    <main>
+      
     <section class="max-h-screen overflow-y-scroll snap snap-y snap-mandatory">
+      {% include 'header.njk' %}
     <div
       class="bg-[url('../assets/glass.gif')] bg-cover bg-center h-screen snap-center"
     >
-      <div class="flex justify-between font-bold pt-5">
-        <div class="flex-1 ml-8">
-          <a href="/" class="flex items-center order-first mb-2 font-medium text-gray-900 lg:order-none lg:w-auto title-font lg:items-center lg:justify-center lg:mb-0">
-                        <img class="h-12" src="https://cdn.glitch.global/b426bced-20bb-4c94-b19b-582224045725/vimwhite.png?v=1652820319383" />
-                    </a>
-        </div>
-        <div class="grow hidden xl:inline">
-          <ul
-            class="flex flex-row justify-center text-slate-400 text-[14px] hover:cursor-pointer"
-          >
-            <li class="py-1 px-3 mx-5 text-slate-300">
-              Visionaire
-            </li>
-            <li class="py-1 px-3 mx-5 text-slate-300">
-              Press
-            </li>
-            <li class="py-1 px-3 mx-5 text-slate-300">
-              Holoboard
-            </li>
-            <li class="py-1 px-3 mx-5 text-slate-300">
-              Ring
-            </li>
-            <li class="py-1 px-3 mx-5 text-slate-300">
-              Coin
-            </li>
-            {# <li class="py-1 px-3 mx-5 text-slate-300">
-              Solar Panels
-            </li> #}
-          </ul>
-        </div>
-        <div class="flex-1 hidden xl:inline">
-          <ul class="flex flex-row justify-end text-red-600 text-[14px]">
-            <li class="mx-5 text-slate-300 py-1 px-3">
-              Shop
-            </li>
-            {# <li class="mx-5 text-slate-300 py-1 px-3">
-              Account
-            </li>
-            <li class="mx-5 text-slate-300 py-1 px-3">
-              Menu
-            </li> #}
-          </ul>
-        </div>
-      </div>
+      
 
       <!-- Model S -->
-      <div class="flex flex-col justify-center mt-24">
+
+      <div class="flex flex-col justify-center relative top-20">
         <h1 class="text-[40px] m-auto font-bold text-tesla-dark">Visionaire</h1>
         <p class="m-auto pt-1 text-[16px] text-[#5c5d61]">
           Blockchain enabled Smart Glass</span>
         </p>
       </div>
       <div
-        class="flex flex-col items-center justify-center mt-[320px] md:mt-[40px] text-[14px] md:flex-row"
+        class="flex flex-col items-center justify-center mt-[320px] md:mt-[40px] text-[14px] md:flex-row relative top-24"
       >
         <a href="/shop/visionaire"
           class="btn btn-primary">
           Pre-Order Now
         </a>
       </div>
-      <div class="flex justify-center">
+      <div class="flex justify-center relative top-24">
         <div class="animate-bounce">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3c3c3c" class="w-6 h-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25" />
@@ -107,14 +69,14 @@
     <div
       class="bg-[url('../assets/press.gif')] bg-cover bg-center h-screen snap-center"
     >
-      <div class="flex flex-col justify-center pt-36">
+      <div class="flex flex-col justify-center pt-32">
         <h1 class="text-[40px] m-auto font-bold text-white">Press</h1>
         <p class="m-auto pt-1 text-[16px] text-[#c7cbdd]">
           Wireless blockchain-enabled hand-held printer</span>
         </p>
       </div>
       <div
-        class="flex flex-col items-center justify-center mt-[370px] md:mt-[410px] text-[14px] md:flex-row"
+        class="flex flex-col items-center justify-center mt-[370px] md:mt-[470px] text-[14px] md:flex-row"
       >
         
         <a href="/shop/press"
@@ -130,7 +92,7 @@
     <div
       class="bg-[url('../assets/holoboard.gif')] bg-cover bg-center h-screen snap-center"
     >
-      <div class="flex flex-col justify-center pt-28">
+      <div class="flex flex-col justify-center pt-32">
         <h1 class="text-[40px] m-auto font-bold text-white">Holoboard</h1>
         <p class="m-auto pt-1 text-[16px] text-white">
           Wireless Laser Keyboard for your<span class="underline">AWARE</span> devices
@@ -151,7 +113,7 @@
     <div
       class="bg-[url('../assets/ring.gif')] bg-cover bg-center h-screen snap-center"
     >
-      <div class="flex flex-col justify-center pt-28">
+      <div class="flex flex-col justify-center pt-24">
         <h1 class="text-[40px] m-auto font-bold text-tesla-dark">Lumen Ring</h1>
         <p class="m-auto pt-1 text-[16px] text-slate-500">
           Touch controller ring for your <span class="underline">AWARE</span> devices.
@@ -257,5 +219,6 @@
       </div>
     </div> #}
     </section>
+    </main>
   </body>
 </html>
