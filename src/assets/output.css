@@ -1,14 +1,3 @@
-/* Custom Base Styles Go Here. */
-
-@font-face {
-  font-family: "Gotham Book";
-  src: url("/assets/Gotham_Book.otf");
-}
-
-* {
-  font-family: "Gotham Book", sans-serif;
-}
-
 /*
 ! tailwindcss v3.0.18 | MIT License | https://tailwindcss.com
 */
@@ -616,32 +605,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/assets\/tesla-hp-1\.avif\'\)\] {
-  background-image: url('../assets/glass.gif');
+.bg-\[url\(\'\.\.\/public\/tesla-hp-1\.avif\'\)\] {
+  background-image: url('../public/tesla-hp-1.avif');
 }
 
-.bg-\[url\(\'\.\.\/assets\/tesla-hp-2\.avif\'\)\] {
-  background-image: url('../assets/tesla-hp-2.avif');
+.bg-\[url\(\'\.\.\/public\/tesla-hp-2\.avif\'\)\] {
+  background-image: url('../public/tesla-hp-2.avif');
 }
 
-.bg-\[url\(\'\.\.\/assets\/tesla-hp-3\.avif\'\)\] {
-  background-image: url('../assets/tesla-hp-3.avif');
+.bg-\[url\(\'\.\.\/public\/tesla-hp-3\.avif\'\)\] {
+  background-image: url('../public/tesla-hp-3.avif');
 }
 
-.bg-\[url\(\'\.\.\/assets\/tesla-hp-4\.avif\'\)\] {
-  background-image: url('../assets/tesla-hp-4.avif');
+.bg-\[url\(\'\.\.\/public\/tesla-hp-4\.avif\'\)\] {
+  background-image: url('../public/tesla-hp-4.avif');
 }
 
-.bg-\[url\(\'\.\.\/assets\/tesla-hp-5\.avif\'\)\] {
-  background-image: url('../assets/tesla-hp-5.avif');
+.bg-\[url\(\'\.\.\/public\/tesla-hp-5\.avif\'\)\] {
+  background-image: url('../public/tesla-hp-5.avif');
 }
 
-.bg-\[url\(\'\.\.\/assets\/tesla-hp-6\.avif\'\)\] {
-  background-image: url('../assets/tesla-hp-6.avif');
+.bg-\[url\(\'\.\.\/public\/tesla-hp-6\.avif\'\)\] {
+  background-image: url('../public/tesla-hp-6.avif');
 }
 
-.bg-\[url\(\'\.\.\/assets\/tesla-hp-7\.avif\'\)\] {
-  background-image: url('../assets/tesla-hp-7.avif');
+.bg-\[url\(\'\.\.\/public\/tesla-hp-7\.avif\'\)\] {
+  background-image: url('../public/tesla-hp-7.avif');
 }
 
 .bg-cover {
@@ -730,16 +719,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-}
-
-@font-face {
-  font-family: "Gotham Book";
-
-  src: url("../assets/Gotham_Book.otf");
-}
-
-* {
-  font-family: "Gotham Book", sans-serif;
 }
 
 .hover\:cursor-pointer:hover {
