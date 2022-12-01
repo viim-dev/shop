@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tesla Homepage</title>
+    <title>Aware by ViiM</title>
     <link rel="stylesheet" href="/assets/main.bundle.css">
     <link
       rel="stylesheet"
@@ -13,21 +13,15 @@
     />
   </head>
   <body>
+    <section class="max-h-screen overflow-y-scroll snap snap-y snap-mandatory">
     <div
-      class="bg-[url('../assets/glass.gif')] bg-cover bg-center h-screen"
+      class="bg-[url('../assets/glass.gif')] bg-cover bg-center h-screen snap-center"
     >
       <div class="flex justify-between font-bold pt-5">
         <div class="flex-1 ml-8">
-          <svg
-            class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon w-32"
-            viewBox="0 0 342 35"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 .1a9.7 9.7 0 007 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 007-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 006-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 00-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zm0 13.8h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zm0 14.1h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zM308.5 7h26a9.6 9.6 0 007-7h-40a9.6 9.6 0 007 7z"
-              fill="currentColor"
-            ></path>
-          </svg>
+          <a href="/" class="flex items-center order-first mb-2 font-medium text-gray-900 lg:order-none lg:w-auto title-font lg:items-center lg:justify-center lg:mb-0">
+                        <img class="h-12" src="https://cdn.glitch.global/b426bced-20bb-4c94-b19b-582224045725/vimwhite.png?v=1652820319383" />
+                    </a>
         </div>
         <div class="grow hidden xl:inline">
           <ul
@@ -76,108 +70,92 @@
         </p>
       </div>
       <div
-        class="flex flex-col items-center justify-center mt-[400px] md:mt-[530px] text-[14px] md:flex-row"
+        class="flex flex-col items-center justify-center mt-[320px] md:mt-[470px] text-[14px] md:flex-row"
       >
-        <button
-          class="rounded-full bg-gray-800 w-96 md:w-60 mx-0 h-10 text-white md:mx-4"
-        >
+        <a href="/shop/visionaire"
+          class="rounded-full bg-gray-800 w-96 md:w-60 mx-0 h-10 text-white md:mx-4">
           Pre-Order Now
-        </button>
-        <button
-          class="rounded-full bg-slate-200 w-96 md:w-60 mx-0 h-10 text-gray-900 md:mx-4 mt-2"
-        >
-          Existing Inventory
-        </button>
+        </a>
       </div>
       <div class="flex justify-center">
         <div class="animate-bounce">
-          <i class="fas fa-chevron-down fa-2x mt-16"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25" />
+</svg>
+
         </div>
       </div>
     </div>
     <!-- Model Y -->
     <div
-      class="bg-[url('../assets/press.gif')] bg-cover bg-center h-screen"
+      class="bg-[url('../assets/press.gif')] bg-cover bg-center h-screen snap-center"
     >
       <div class="flex flex-col justify-center pt-28">
-        <h1 class="text-[40px] m-auto font-bold text-tesla-dark">Model Y</h1>
-        <p class="m-auto pt-1 text-[16px] text-[#5c5d61]">
-          Order Online for <span class="underline">Touchless Delivery</span>
+        <h1 class="text-[40px] m-auto font-bold text-white">Press</h1>
+        <p class="m-auto pt-1 text-[16px] text-[#c7cbdd]">
+          Wireless blockchain-enabled hand-held printer</span>
         </p>
       </div>
       <div
-        class="flex flex-col items-center justify-center mt-[400px] md:mt-[530px] text-[14px] md:flex-row"
+        class="flex flex-col items-center justify-center mt-[370px] md:mt-[500px] text-[14px] md:flex-row"
       >
-        <button
-          class="rounded-full bg-gray-800 w-96 md:w-60 mx-0 h-10 text-white md:mx-4"
-        >
-          Pre-Order Now
-        </button>
-        <button
+        
+        <a href="/shop/press"
           class="rounded-full bg-slate-200 w-96 md:w-60 mx-0 h-10 text-gray-900 md:mx-4 mt-2"
         >
-          Existing Inventory
-        </button>
+          Pre-Order
+        </a>
       </div>
     </div>
 
     <!-- Model S -->
 
     <div
-      class="bg-[url('../assets/tesla-hp-3.avif')] bg-cover bg-center h-screen"
+      class="bg-[url('../assets/holoboard.gif')] bg-cover bg-center h-screen snap-center"
     >
       <div class="flex flex-col justify-center pt-28">
-        <h1 class="text-[40px] m-auto font-bold text-tesla-dark">Model S</h1>
-        <p class="m-auto pt-1 text-[16px] text-[#5c5d61]">
-          Order Online for <span class="underline">Touchless Delivery</span>
+        <h1 class="text-[40px] m-auto font-bold text-white">Holoboard</h1>
+        <p class="m-auto pt-1 text-[16px] text-white">
+          Wireless Laser Keyboard for your<span class="underline">AWARE</span> devices
         </p>
       </div>
       <div
-        class="flex flex-col items-center justify-center mt-[400px] md:mt-[530px] text-[14px] md:flex-row"
+        class="flex flex-col items-center justify-center mt-[370px] md:mt-[500px] text-[14px] md:flex-row"
       >
-        <button
-          class="rounded-full bg-gray-800 w-96 md:w-60 mx-0 h-10 text-white md:mx-4"
-        >
-          Pre-Order Now
-        </button>
-        <button
+        <a href="/shop/holoboard"
           class="rounded-full bg-slate-200 w-96 md:w-60 mx-0 h-10 text-gray-900 md:mx-4 mt-2"
         >
-          Existing Inventory
-        </button>
+          Pre-Order
+        </a>
       </div>
     </div>
 
     <!-- Model X -->
     <div
-      class="bg-[url('../assets/tesla-hp-4.avif')] bg-cover bg-center h-screen"
+      class="bg-[url('../assets/ring.gif')] bg-cover bg-center h-screen snap-center"
     >
       <div class="flex flex-col justify-center pt-28">
-        <h1 class="text-[40px] m-auto font-bold text-tesla-dark">Model X</h1>
-        <p class="m-auto pt-1 text-[16px] text-[#5c5d61]">
-          Order Online for <span class="underline">Touchless Delivery</span>
+        <h1 class="text-[40px] m-auto font-bold text-tesla-dark">Lumen Ring</h1>
+        <p class="m-auto pt-1 text-[16px] text-white">
+          Touch controller ring for your <span class="underline">AWARE</span> devices.
         </p>
       </div>
       <div
-        class="flex flex-col items-center justify-center mt-[400px] md:mt-[530px] text-[14px] md:flex-row"
+        class="flex flex-col items-center justify-center mt-[370px] md:mt-[500px] text-[14px] md:flex-row"
       >
-        <button
+        <a href="/shop/ring"
           class="rounded-full bg-gray-800 w-96 md:w-60 mx-0 h-10 text-white md:mx-4"
         >
           Pre-Order Now
-        </button>
-        <button
-          class="rounded-full bg-slate-200 w-96 md:w-60 mx-0 h-10 text-gray-900 md:mx-4 mt-2"
-        >
-          Existing Inventory
-        </button>
+        </a>
+        
       </div>
     </div>
 
     <!-- Solar Panels -->
 
-    <div
-      class="bg-[url('../assets/tesla-hp-5.avif')] bg-cover bg-center h-screen"
+    {# <div
+      class="bg-[url('../assets/tesla-hp-5.avif')] bg-cover bg-center h-screen snap-center"
     >
       <div class="flex flex-col justify-center pt-28">
         <h1 class="text-[40px] m-auto font-bold text-tesla-dark">
@@ -188,7 +166,7 @@
         </p>
       </div>
       <div
-        class="flex flex-col items-center justify-center mt-[400px] md:mt-[530px] text-[14px] md:flex-row"
+        class="flex flex-col items-center justify-center mt-[370px] md:mt-[500px] text-[14px] md:flex-row"
       >
         <button
           class="rounded-full bg-gray-800 w-96 md:w-60 mx-0 h-10 text-white md:mx-4"
@@ -206,7 +184,7 @@
     <!-- Solar Roof -->
 
     <div
-      class="bg-[url('../assets/tesla-hp-6.avif')] bg-cover bg-center h-screen"
+      class="bg-[url('../assets/tesla-hp-6.avif')] bg-cover bg-center h-screen snap-center"
     >
       <div class="flex flex-col justify-center pt-28">
         <h1 class="text-[40px] m-auto font-bold text-tesla-dark">Solar Roof</h1>
@@ -215,7 +193,7 @@
         </p>
       </div>
       <div
-        class="flex flex-col items-center justify-center mt-[400px] md:mt-[530px] text-[14px] md:flex-row"
+        class="flex flex-col items-center justify-center mt-[370px] md:mt-[500px] text-[14px] md:flex-row"
       >
         <button
           class="rounded-full bg-gray-800 w-96 md:w-60 mx-0 h-10 text-white md:mx-4"
@@ -228,12 +206,12 @@
           Learn More
         </button>
       </div>
-    </div>
+    </div> #}
 
     <!-- Accessories -->
 
-    <div
-      class="bg-[url('../assets/tesla-hp-7.avif')] bg-cover bg-center h-screen"
+    {# <div
+      class="bg-[url('../assets/tesla-hp-7.avif')] bg-cover bg-center h-screen snap-center"
     >
       <div class="flex flex-col justify-center pt-28">
         <h1 class="text-[40px] m-auto font-bold text-tesla-dark">
@@ -241,13 +219,13 @@
         </h1>
       </div>
       <div
-        class="flex flex-col items-center justify-center mt-[400px] md:mt-[530px] text-[14px] md:flex-row"
+        class="flex flex-col items-center justify-center mt-[370px] md:mt-[500px] text-[14px] md:flex-row"
       >
-        <button
+        <a href="//viim.shop"
           class="rounded-full bg-gray-800 w-96 md:w-60 mx-0 h-10 text-white md:mx-4"
         >
           Shop Now
-        </button>
+        </a>
       </div>
     </div>
     <div class="flex justify-center pb-5">
@@ -264,6 +242,7 @@
           <li class="mx-5">Locations</li>
         </ul>
       </div>
-    </div>
+    </div> #}
+    </section>
   </body>
 </html>
