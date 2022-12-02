@@ -1,5 +1,5 @@
 <nav x-data="{ isOpen : false }" @keydown.escape="isDialogOpen = false" class="sticky top-0 z-50 bg-transparent shadow-xl">
-        <div class="mr-3 lg:mx-6 py-4 mx-auto lg:flex lg:justify-between lg:items-center">
+        <div class=" lg:mx-6 py-4 mx-auto lg:flex lg:justify-between lg:items-center">
             <div class="flex items-center justify-between">
                 <div>
                     <a href="/" class="flex items-center order-first mb-2 font-medium text-gray-900 lg:order-none lg:w-auto title-font lg:items-center lg:justify-center lg:mb-0">
@@ -8,7 +8,7 @@
                 </div>
                 
                 <!-- Mobile menu button -->
-                <div class="flex lg:hidden">
+                <div class="flex lg:hidden mr-3">
                     <button @click="isOpen = !isOpen" type="button" class="text-gray-100 dark:text-gray-200 focus:outline-none focus:text-gray-100 dark:focus:text-gray-100" aria-label="toggle menu">
                         <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
                             <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
