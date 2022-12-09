@@ -8,14 +8,17 @@ collections:
   - name: "featuredproducts"
     label: "Featured Products"
     folder: "src/featured"
-    slug: "#{{title}}"
+    slug: "{{title}}"
     create: true
     fields:
       - name: title
         label: Title (optional)
         widget: string
+      - name: headline
+        label: Headline (optional)
+        widget: string
       - name: subtitle
-        label: Sub Title (optional)
+        label: Sub Headline (optional)
         widget: string
       - name: soldout
         label: Sold Out
