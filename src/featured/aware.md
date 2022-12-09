@@ -1,5 +1,6 @@
 ---
 title: aware
+tags: featured
 headline: We Are Web3.
 subtitle: Phone + Computer + Decentralized = AWARE
 soldout: true
