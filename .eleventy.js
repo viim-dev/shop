@@ -1,5 +1,6 @@
 module.exports = (config) => {
   config.addPassthroughCopy({ 'public': './' })
+  config.addPassthroughCopy({ 'src/admin/config.yml': './admin/config.yml' })
   config.addPassthroughCopy({ './src/assets': 'assets' }) 
   config.setBrowserSyncConfig({
     files: ['dist/**/*'],

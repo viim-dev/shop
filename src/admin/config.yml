@@ -1,6 +1,35 @@
 backend:
-  name: github
-  repo: emelleme/wheat-stack # CHANGE ME
-  branch: master
-  base_url: https://wheat-stack.pages.dev # CHANGE ME
-  auth_endpoint: api/auth
+  name: git-gateway
+
+media_folder: "/dist/assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "featuredproducts"
+    label: "Featured Products"
+    folder: "src/featured"
+    slug: "#{{title}}"
+    fields:
+      - name: title
+        label: Title (optional)
+        widget: string
+      - name: subtitle
+        label: Sub Title (optional)
+        widget: string
+      - name: soldout
+        label: Sold Out
+        widget: boolean
+      - { label: 'Cover Image', name: 'coverimage', widget: 'image' }
+      - name: buttonText
+        label: Button Text
+        widget: string
+      - {
+          label: 'Button Style',
+          name: 'buttonStyle',
+          widget: 'select',
+          options: ['primary', 'outline', 'accent'],
+          multiple: false,
+        }
+      - name: linkTo
+        label: Button Link
+        widget: text
