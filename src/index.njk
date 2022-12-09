@@ -1,29 +1,30 @@
 {% set title = 'Aware by ViiM' %}
 {% extends "landinglayout.njk" %}
 
+{% set featured = collections.featured[0].data %}
+
 {% block body %}
 <main>
-    {% set featured = collections.featuredproducts %}
+    
     <section class="max-h-screen overflow-y-scroll snap snap-y snap-mandatory">
       {% include 'header.njk' %}
       <!-- AWARE -->
     
-    {% for item in featured %}
     <div class="bg-[url('/assets/aware.jpg')] bg-cover bg-center h-screen snap-center relative">
       <div class="flex flex-col justify-center">
         {# <h1 class="text-[40px] m-auto font-bold text-tesla-dark">
           AWARE
         </h1> #}
         <p class="m-auto pt-1 text-[16px] text-2xl  relative top-32 text-slate-300 p2font">
-          {{ heading }}</span>
+          {{ featured.headline }}</span>
         </p>
         <p class="m-auto pt-1 text-[16px] text-center relative top-32 text-slate-300 p2font">
-          Phone + Computer + Decentralized = AWARE</span>
+          {{ featured.subtitle }}</span>
         </p>
       </div>
       <div class="flex flex-col items-center justify-center mt-[440px] md:mt-[390px] text-[14px] md:flex-row relative bottom-52 md:bottom-20 h-full">
-        <a href="/shop/aware" class="btn btn-outline">
-          Learn More
+        <a href="{{ featured.linkTo }}" class="btn btn-outline">
+          {{ featured.buttonText }}
         </a>
       </div>
       <div class="flex justify-center text-white mt-[10px] absolute bottom-6 w-full">
@@ -34,7 +35,6 @@
         </div>
       </div>
     </div>
-    {% endfor %}
     <div
       class="bg-[url('../assets/glass.gif')] bg-cover bg-center h-screen snap-center"
     >
