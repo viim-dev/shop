@@ -9,6 +9,7 @@ collections:
     label: "Featured Products"
     folder: "src/featured"
     slug: "#{{title}}"
+    create: true
     fields:
       - name: title
         label: Title (optional)
