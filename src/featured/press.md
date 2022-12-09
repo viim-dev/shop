@@ -1,5 +1,5 @@
 ---
-title: Press
+title: press
 tags: featured
 headline: Press
 subtitle: Wireless blockchain-enabled hand-held printer
