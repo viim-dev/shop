@@ -36,4 +36,4 @@ collections:
         }
       - name: linkTo
         label: Button Link
-        widget: text
+        widget: string
