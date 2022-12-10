@@ -4,7 +4,7 @@ tags: featured
 headline: Press
 subtitle: Wireless blockchain-enabled hand-held printer
 soldout: true
-coverimage: /assets/slide3.gif
+coverimage: https://github.com/viim-dev/shop/blob/master/dist/assets/slide3.gif?raw=true
 buttonText: Buy Now
 buttonStyle: primary
 linkTo: /shop/press
