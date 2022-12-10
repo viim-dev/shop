@@ -3,7 +3,7 @@ title: slide1
 tags: featured
 headline: We Are Web3.
 subtitle: Phone + Computer + Decentralized = AWARE
-soldout: true
+soldout: false
 coverimage: /uploads  /slide1.png
 buttonText: Learn More
 buttonStyle: primary
