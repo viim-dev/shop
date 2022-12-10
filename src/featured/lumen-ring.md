@@ -6,6 +6,6 @@ subtitle: Touch controller ring for your AWARE devices.
 soldout: true
 coverimage: /assets/uploads/slide5.gif
 buttonText: Buy Now
-buttonStyle: outline
+buttonStyle: primary
 linkTo: /shop/ring
 ---
