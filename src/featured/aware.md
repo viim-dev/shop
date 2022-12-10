@@ -6,6 +6,6 @@ subtitle: Phone + Computer + Decentralized = AWARE
 soldout: true
 coverimage: /assets/uploads/slide1.png
 buttonText: Learn More
-buttonStyle: outline
+buttonStyle: primary
 linkTo: https://www.viim.shop/about-us
 ---
