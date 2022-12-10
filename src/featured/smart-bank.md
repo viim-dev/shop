@@ -4,7 +4,7 @@ tags: featured
 headline: Smart Bank
 subtitle: Re-loadable electronic cash coin
 soldout: true
-coverimage: /assets/slide6.png
+coverimage: https://github.com/viim-dev/shop/blob/master/dist/assets/slide6.png?raw=true
 buttonText: Buy Now
 buttonStyle: outline
 linkTo: /shop/coin
