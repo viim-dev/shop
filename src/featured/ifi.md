@@ -6,6 +6,6 @@ subtitle: Mini Wifi Hotspot for your AWARE products
 soldout: true
 coverimage: /assets/uploads/slide7.gif
 buttonText: Buy Now
-buttonStyle: outline
+buttonStyle: primary
 linkTo: /shop/ifi
 ---
