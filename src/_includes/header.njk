@@ -9,7 +9,7 @@
                 
                 <!-- Mobile menu button -->
                 <div class="flex lg:hidden mr-3">
-                    <button @click="isOpen = !isOpen" type="button" class="text-slate-400 dark:text-slate-400 focus:outline-none focus:text-slate-300 dark:focus:text-slate-100" aria-label="toggle menu">
+                    <button @click="isOpen = !isOpen" type="button" class="text-slate-600 dark:text-slate-600 focus:outline-none focus:text-slate-300 dark:focus:text-slate-100" aria-label="toggle menu">
                         <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
                             <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
                         </svg>
@@ -18,10 +18,10 @@
             </div>
 
             <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-            <div :class="!isOpen ? 'hidden' : ''" class="items-center lg:flex lg:bg-transparent bg-white text-slate-600 lg:text-slate-300">
+            <div :class="!isOpen ? 'hidden' : ''" class="items-center lg:flex lg:bg-transparent bg-white text-slate-600 lg:text-slate-500">
                 <div class="flex flex-col md:flex-row md:mx-6 px-3">
                 {% for item in navigation %}
-                  <a class="my-1  font-light text-slate-600 lg:text-slate-200 md:mx-4 md:my-0" 
+                  <a class="my-1  font-light text-slate-600 lg:text-slate-500 md:mx-4 md:my-0" 
                   href="{{ item.route }}">
                     {{ item.name }}
                   </a>
