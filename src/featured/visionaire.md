@@ -1,10 +1,10 @@
 ---
-title: visionaire
+title: slide2
 tags: featured
 headline: Visionaire
 subtitle: Blockchain enabled Smart Glass
 soldout: true
-coverimage: /assets/uploads/glass.gif
+coverimage: /assets/uploads/slide2.gif
 buttonText: Buy Now
 buttonStyle: primary
 linkTo: /shop/visionaire

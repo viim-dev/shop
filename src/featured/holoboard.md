@@ -1,10 +1,10 @@
 ---
-title: Holoboard
+title: slide4
 tags: featured
 headline: Holoboard
 subtitle: Wireless Laser Keyboard for AWARE devices
 soldout: true
-coverimage: /assets/uploads/holoboard.gif
+coverimage: /assets/uploads/slide4.gif
 buttonText: Buy Now
 buttonStyle: outline
 linkTo: /shop/holoboard
