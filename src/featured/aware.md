@@ -4,7 +4,7 @@ tags: featured
 headline: We Are Web3.
 subtitle: Phone + Computer + Decentralized = AWARE
 soldout: true
-coverimage: /assets/slide1.png
+coverimage: /uploads  /slide1.png
 buttonText: Learn More
 buttonStyle: primary
 linkTo: https://www.viim.shop/about-us
