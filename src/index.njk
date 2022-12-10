@@ -2,12 +2,12 @@
 {% extends "landinglayout.njk" %}
 
 {% set aware = collections.featured[0].data %}
-{% set glass = collections.featured[1].data %}
-{% set holo = collections.featured[2].data %}
-{% set ifi = collections.featured[3].data %}
-{% set ring = collections.featured[4].data %}
-{% set press = collections.featured[5].data %}
-{% set coin = collections.featured[6].data %}
+{% set glass = collections.featured[6].data %}
+{% set holo = collections.featured[1].data %}
+{% set ifi = collections.featured[2].data %}
+{% set ring = collections.featured[3].data %}
+{% set press = collections.featured[4].data %}
+{% set coin = collections.featured[5].data %}
 
 {% block body %}
 <main>
@@ -22,14 +22,14 @@
         {# <h1 class="text-[40px] m-auto font-bold text-tesla-dark">
           AWARE
         </h1> #}
-        <p class="m-auto pt-1 text-[16px] text-2xl  relative top-16 md:top-32 text-slate-300 p2font">
+        <p class="m-auto pt-1 text-[16px] text-2xl  relative top-16 md:top-32 text-slate-600 p2font">
           {{ aware.headline }}</span>
         </p>
-        <p class="m-auto pt-1 text-[16px] text-center relative top-20 md:top-40 text-slate-300 p2font">
+        <p class="m-auto pt-1 text-[16px] text-center relative top-20 md:top-40 text-slate-600 p2font">
           {{ aware.subtitle }}</span>
         </p>
       </div>
-      <div class="flex flex-col items-center justify-center mt-[440px] md:mt-[390px] text-[14px] md:flex-row relative bottom-60 md:bottom-20 h-full">
+      <div class="flex flex-col items-center justify-center mt-[440px] md:mt-[390px] text-[14px] md:flex-row relative bottom-60 md:bottom-48 h-full">
         <a href="{{ aware.linkTo }}" class="btn btn-{{ aware.buttonStyle }}">
           {{ aware.buttonText }}
         </a>
@@ -57,7 +57,7 @@
         </p>
       </div>
       <div
-        class="flex flex-col items-center justify-center mt-[440px] md:mt-[390px] text-[14px] md:flex-row relative bottom-60 md:bottom-20 h-full"
+        class="flex flex-col items-center justify-center mt-[440px] md:mt-[390px] text-[14px] md:flex-row relative bottom-60 md:bottom-48 h-full"
       >
         <a href="{{ glass.linkTo }}"
           class="btn btn-{{ glass.buttonStyle }}">
@@ -74,7 +74,7 @@
     >
       <div class="flex flex-col justify-center pt-24 md:pt-28">
         <h1 class="text-[40px] m-auto font-bold text-white">{{ press.headline }}</h1>
-        <p class="m-auto pt-1 text-[16px] text-[#c7cbdd]">
+        <p class="m-auto pt-1 text-[16px] text-slate-600">
           {{ press.subtitle }}</span>
         </p>
       </div>
@@ -143,10 +143,10 @@
     background-position: center;"
     >
       <div class="flex flex-col justify-center pt-28">
-        <h1 class="text-[40px] m-auto font-bold text-slate-200">
+        <h1 class="text-[40px] m-auto font-bold text-slate-600">
           {{ coin.headline }}
         </h1>
-        <p class="m-auto pt-1 text-[16px] text-[#a4a5a8]">
+        <p class="m-auto pt-1 text-[16px] text-slate-500">
           {{ coin.subtitle }}
         </p>
       </div>
@@ -169,13 +169,13 @@
     background-position: center;"
     >
       <div class="flex flex-col justify-center pt-24">
-        <h1 class="text-[40px] m-auto font-bold text-white">{{ ifi.headline }}</h1>
+        <h1 class="text-[40px] m-auto font-bold text-slate-500">{{ ifi.headline }}</h1>
         <p class="m-auto pt-1 text-[16px] text-[#a4a5aa]">
           {{ ifi.subtitle }}
         </p>
       </div>
       <div
-        class="flex flex-col items-center justify-center mt-[440px] md:mt-[390px] text-[14px] md:flex-row relative bottom-60 md:bottom-60 h-full"
+        class="flex flex-col items-center justify-center mt-[440px] md:mt-[390px] text-[14px] md:flex-row relative bottom-60 md:bottom-80 h-full"
       >
         
         <a href="{{ ifi.linkTo }}"
