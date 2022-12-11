@@ -18,10 +18,10 @@
             </div>
 
             <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-            <div :class="!isOpen ? 'hidden' : ''" class="items-center lg:flex lg:bg-transparent bg-white text-slate-600 lg:text-slate-500">
+            <div :class="!isOpen ? 'hidden' : ''" class="items-center transition duration-300 ease-in-out lg:flex lg:bg-transparent bg-white text-slate-800 lg:text-slate-800">
                 <div class="flex flex-col md:flex-row md:mx-6 px-3">
                 {% for item in navigation %}
-                  <a class="my-1  font-light text-slate-600 lg:text-slate-500 md:mx-4 md:my-0" 
+                  <a class="my-1 font-bold text-slate-800 lg:text-slate-800 md:mx-4 md:my-0" 
                   href="{{ item.route }}">
                     {{ item.name }}
                   </a>

@@ -2,11 +2,11 @@
 {% extends "landinglayout.njk" %}
 
 {% set aware = collections.featured[0].data %}
-{% set glass = collections.featured[6].data %}
-{% set holo = collections.featured[1].data %}
-{% set ifi = collections.featured[2].data %}
-{% set ring = collections.featured[3].data %}
-{% set press = collections.featured[4].data %}
+{% set glass = collections.featured[1].data %}
+{% set holo = collections.featured[3].data %}
+{% set ifi = collections.featured[6].data %}
+{% set ring = collections.featured[4].data %}
+{% set press = collections.featured[2].data %}
 {% set coin = collections.featured[5].data %}
 
 {% block body %}
@@ -22,19 +22,19 @@
         {# <h1 class="text-[40px] m-auto font-bold text-tesla-dark">
           AWARE
         </h1> #}
-        <p class="m-auto pt-1 text-[16px] text-2xl  relative top-16 md:top-32 text-slate-600 p2font">
+        <h2 class="m-auto pt-1 text-3xl font-bold relative top-12 md:top-16 text-slate-600 p2font">
           {{ aware.headline }}</span>
-        </p>
-        <p class="m-auto pt-1 text-[16px] text-center relative top-20 md:top-40 text-slate-600">
+        </h2>
+        <p class="m-auto pt-1 text-[16px] text-center relative top-14 md:top-20 text-slate-600">
           {{ aware.subtitle }}</span>
         </p>
       </div>
-      <div class="flex flex-col items-center justify-center mt-[440px] md:mt-[390px] text-[14px] md:flex-row relative bottom-60 md:bottom-48 h-full">
-        <a href="{{ aware.linkTo }}" class="btn btn-{{ aware.buttonStyle }}">
+      <div class="flex flex-col items-center justify-center mt-[440px] md:mt-[390px] text-[14px] md:flex-row relative bottom-72 md:bottom-48 h-full">
+        <a href="{{ aware.linkTo }}" class="btn btn-wide rounded btn-{{ aware.buttonStyle }}">
           {{ aware.buttonText }}
         </a>
       </div>
-      <div class="flex justify-center text-white mt-[10px] absolute bottom-20 w-full">
+      <div class="flex justify-center text-black mt-[10px] absolute bottom-10 w-full">
         <div class="animate-bounce">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
@@ -60,7 +60,7 @@
         class="flex flex-col items-center justify-center mt-[440px] md:mt-[390px] text-[14px] md:flex-row relative bottom-60 md:bottom-48 h-full"
       >
         <a href="{{ glass.linkTo }}"
-          class="btn btn-{{ glass.buttonStyle }}">
+          class="btn btn-wide rounded btn-{{ glass.buttonStyle }}">
           {{ glass.buttonText }}
         </a>
       </div>
@@ -83,7 +83,7 @@
       >
         
         <a href="{{ press.linkTo }}"
-          class="btn btn-{{ press.buttonStyle }}"
+          class="btn btn-wide rounded btn-{{ press.buttonStyle }}"
         >
           {{ press.buttonText }}
         </a>
@@ -98,7 +98,7 @@
     >
       <div class="flex flex-col justify-center relative top-20">
         <h1 class="text-[40px] m-auto font-bold text-white">{{ holo.headline }}</h1>
-        <p class="m-auto pt-1 text-[16px] text-white">
+        <p class="m-auto pt-1 text-[16px] text-slate-600">
           {{ holo.subtitle }}
         </p>
       </div>
@@ -106,7 +106,7 @@
         class="flex flex-col items-center justify-center mt-[440px] md:mt-[390px] text-[14px] md:flex-row relative bottom-60 md:bottom-60 h-full"
       >
         <a href="{{ holo.linkTo }}"
-          class="btn btn-{{ holo.buttonStyle }}"
+          class="btn btn-wide rounded btn-{{ holo.buttonStyle }}"
         >
           {{ holo.buttonText }}
         </a>
@@ -119,7 +119,7 @@
     background-position: center;"
     >
       <div class="flex flex-col justify-center relative top-20">
-        <h1 class="text-[40px] m-auto font-bold text-tesla-dark">{{ ring.headline }}</h1>
+        <h1 class="text-[40px] m-auto font-bold text-white">{{ ring.headline }}</h1>
         <p class="m-auto pt-1 text-[16px] text-slate-800">
           {{ ring.subtitle }}
         </p>
@@ -128,7 +128,7 @@
         class="flex flex-col items-center justify-center mt-[440px] md:mt-[390px] text-[14px] md:flex-row relative bottom-60 md:bottom-60 h-full"
       >
         <a href="{{ ring.linkTo }}"
-          class="btn btn-{{ ring.buttonStyle }}"
+          class="btn btn-wide rounded btn-{{ ring.buttonStyle }}"
         >
           {{ ring.buttonText }}
         </a>
@@ -143,7 +143,7 @@
     background-position: center;"
     >
       <div class="flex flex-col justify-center relative top-20">
-        <h1 class="text-[40px] m-auto font-bold text-slate-600">
+        <h1 class="text-[40px] m-auto font-bold text-white">
           {{ coin.headline }}
         </h1>
         <p class="m-auto pt-1 text-[16px] text-slate-500">
@@ -155,7 +155,7 @@
       >
         
         <a href="{{ coin.linkTo }}"
-          class="btn btn-{{ coin.buttonStyle }}"
+          class="btn btn-wide rounded btn-{{ coin.buttonStyle }}"
         >
           {{ coin.buttonText }}
         </a>
@@ -168,18 +168,18 @@
       class="bg-cover bg-center h-screen snap-center" style="background:url('{{ ifi.coverimage }}');background-size: cover;
     background-position: center;"
     >
-      <div class="flex flex-col justify-center pt-24">
-        <h1 class="text-[40px] m-auto font-bold text-slate-500">{{ ifi.headline }}</h1>
+      <div class="flex flex-col justify-center relative top-20">
+        <h1 class="text-[40px] m-auto font-bold text-white">{{ ifi.headline }}</h1>
         <p class="m-auto pt-1 text-[16px] text-slate-600">
           {{ ifi.subtitle }}
         </p>
       </div>
       <div
-        class="flex flex-col items-center justify-center mt-[440px] md:mt-[390px] text-[14px] md:flex-row relative bottom-60 md:bottom-80 h-full"
+        class="flex flex-col items-center justify-center mt-[440px] md:mt-[390px] text-[14px] md:flex-row relative bottom-80 md:bottom-80 h-full"
       >
         
         <a href="{{ ifi.linkTo }}"
-          class="btn btn-{{ ifi.buttonStyle }}"
+          class="btn btn-wide rounded btn-{{ ifi.buttonStyle }}"
         >
           {{ ifi.buttonText }}
         </a>
